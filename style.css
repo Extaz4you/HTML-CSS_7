@@ -5,6 +5,7 @@
 body{
     font-family: 'Lato', sans-serif;
     font-family: 'Raleway', sans-serif;
+    width: fit-content;
 }
 .center{
     padding-left: calc(50% - 570px);
@@ -125,5 +126,17 @@ a{
     .center {
         padding-right: calc(50% - 368px);
         padding-left: calc(50% - 368px);
+    }
+
+.main_center_img{
+    width: 100%;
+}   
+.main_center_img_1{
+    width: 100%
+}
+    .main_bottom {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2,362px);
     }
 }
