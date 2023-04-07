@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 
 body{
     font-family: 'Lato', sans-serif;
@@ -308,6 +311,11 @@ a{
     align-content: center;
     flex-direction: column;
 }
+.subscribe_email{
+    display: flex;
+    padding: 20px;
+}
+
 
 .lower_link{
     background-color: #222224;    
