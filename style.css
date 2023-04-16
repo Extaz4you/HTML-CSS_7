@@ -378,75 +378,204 @@ a {
   color: #F16D7F;
 }
 
-.slider {
-  background-color: #F7F7F7;
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter_box {
+  height: 132px;
+  position: relative;
+  display: flex;
+  gap: 32px;
+  padding-top: 39px;
+  box-sizing: border-box;
+}
+
+.filter {
+  padding-top: 13px;
+  width: 360px;
+  box-sizing: border-box;
+  z-index: 10;
+  position: relative;
+}
+.filter_content {
+  background-color: #fff;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+.filter[open] {
+  background-color: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter[open] .filter_heading {
+  color: #F16D7F;
+}
+.filter[open] path {
+  fill: #F16D7F;
+}
+.filter_summary {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 11px;
+  padding-left: 16px;
 }
-.slider_img {
-  width: auto;
+.filter_summary:hover {
+  color: #F16D7F;
 }
-.slider_info {
-  margin-bottom: 100px;
+.filter_summary:hover path {
+  fill: #F16D7F;
 }
-.slider_info_top {
+.filter__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.filter_item {
+  margin-top: 16px;
+}
+.filter_link-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  border: 1px solid #EAEAEA;
+  gap: 11px;
+  padding: 24px 16px;
 }
-.slider_info_top_head {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #F16D7F;
-  padding-top: 60px;
-  padding-bottom: 12px;
-}
-.slider_info_top_head_2 {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  color: #636363;
-  padding-top: 12px;
-  padding-bottom: 50px;
-}
-.slider_info_top_text {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #5E5E5E;
-}
-.slider_info_top_price {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #F16D7F;
-  padding-top: 30px;
-  padding-bottom: 130px;
-}
-.slider_info_top_menu {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.slider_info_top_menu_link {
+.filter_link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #5E5E5E;
+  color: #636363;
 }
-.slider_info_top_menu_img {
-  padding-bottom: 50px;
+.filter_link:hover {
+  color: #F16D7F;
+}
+.filter_head {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  padding: 8px 11px 11px 11px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #F16D7F;
+}
+.filter_head:hover {
+  color: #F16D7F;
+}
+.filter_item[open] .filter_head {
+  color: #F16D7F;
+}
+
+.sort {
+  padding-top: 12px;
+  display: flex;
+  gap: 18px;
+  z-index: 10;
+}
+.sort_details {
+  position: relative;
+}
+.sort_summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort_heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.sort_box {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  position: absolute;
+  left: -9px;
+  top: 22px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.sort_check {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #636363;
+}
+
+.content_box .content_item {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 362px);
+  justify-content: center;
+  justify-items: center;
+}
+
+.paginator {
+  width: 280px;
+  padding: 10px;
+  margin: 30px auto;
+  white-space: nowrap;
+  background: #ecf0f1;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.paginator a,
+.paginator span {
+  display: inline-block;
+  min-width: 20px;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  background: #95a5a6;
+}
+
+.paginator .prev {
+  text-indent: -1000px;
+  margin-right: 20px;
+  background-image: url("https://htmlacademy.ru/assets/course14/arrows.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+.paginator .next {
+  text-indent: -1000px;
+  margin-left: 20px;
+  background-image: url("https://htmlacademy.ru/assets/course14/arrows.png");
+  background-repeat: no-repeat;
+  background-position: 0px -40px;
+}
+
+.paginator .current {
+  background-color: #636363;
+}
+
+.paginator .disabled {
+  opacity: 0.3;
+}
+
+.paginator a:hover {
+  background-color: #F16D7F;
 }
 
 .container {
