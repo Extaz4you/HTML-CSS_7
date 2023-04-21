@@ -749,6 +749,125 @@ summary::-webkit-details-marker {
   background-color: #636363;
 }
 
+/*REGISTRATION*/
+.registration {
+  display: flex;
+  gap: 130px;
+}
+.registration__left .text-field {
+  padding-bottom: 20px;
+  margin-bottom: 1rem;
+}
+.registration__left .text-field__label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.registration__left .text-field__input {
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 30px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.registration__head {
+  padding-top: 65px;
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration__input_2 {
+  padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration__subtext {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration__checkbox {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.registration__checkbox .checkbox-circle {
+  border-radius: 100px;
+}
+.registration__join {
+  display: flex;
+  justify-content: flex-start;
+}
+.registration__join__button {
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 96px;
+  padding: 20px;
+  border: 1px solid gray;
+  justify-content: center;
+  display: flex;
+  background-color: #F16D7F;
+  gap: 10px;
+  width: 200px;
+  align-items: center;
+}
+.registration__join__button:hover {
+  color: #000000;
+  background-color: white;
+}
+.registration__join__button:hover path {
+  fill: black;
+}
+.registration__right {
+  display: flex;
+  flex-direction: column;
+}
+.registration__right .registration__head {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__right .registration__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__right .registration__ul {
+  padding: 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__right .registration__list {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
 @media (max-width: 1024px) {
   .large_image {
     width: 0%;
