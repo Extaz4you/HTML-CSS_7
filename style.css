@@ -9,7 +9,6 @@
 
 body {
   font-family: "Lato", sans-serif;
-  font-family: "Raleway", sans-serif;
 }
 
 .center {
@@ -701,7 +700,7 @@ summary::-webkit-details-marker {
 }
 .basket_box_right_total {
   margin-top: 60px;
-  border: 1px solid gray;
+  border: 0px solid gray;
   background-color: #F5F3F3;
 }
 .basket_box_right_total_head {
@@ -754,6 +753,9 @@ summary::-webkit-details-marker {
   display: flex;
   gap: 130px;
 }
+.registration__left {
+  margin-bottom: 90px;
+}
 .registration__left .text-field {
   padding-bottom: 20px;
   margin-bottom: 1rem;
@@ -767,7 +769,6 @@ summary::-webkit-details-marker {
   width: 100%;
   height: calc(2.25rem + 2px);
   padding: 30px;
-  font-family: inherit;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -819,7 +820,6 @@ summary::-webkit-details-marker {
 .registration__join__button {
   color: #ffffff;
   margin-top: 40px;
-  margin-bottom: 96px;
   padding: 20px;
   border: 1px solid gray;
   justify-content: center;
@@ -912,8 +912,31 @@ summary::-webkit-details-marker {
     align-items: center;
     justify-content: center;
   }
+  .content_box {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 342px);
+    margin-bottom: 60px;
+  }
+  .basket_box {
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+  }
+  .basket_box_left {
+    margin-bottom: 0px;
+    align-items: center;
+  }
+  .basket_box_left_button {
+    margin-bottom: 0px;
+    gap: 100px;
+  }
   .icon:hover path {
     fill: #F16D7F;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 0px;
   }
 }
 @media (max-width: 767px) {
@@ -961,5 +984,26 @@ summary::-webkit-details-marker {
   }
   .icon:hover path {
     fill: #F16D7F;
+  }
+  .registration {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .registration_join__button {
+    margin-bottom: 10px;
+  }
+  .content_box {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_box .content_item {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(1, 362px);
+    justify-items: center;
+  }
+  .basket_box_left_item {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
