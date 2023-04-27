@@ -388,6 +388,7 @@ summary::-webkit-details-marker {
     gap: 32px;
     padding-top: 39px;
     box-sizing: border-box;
+    justify-content: space-between;
 
 }
 .filter{
@@ -527,7 +528,7 @@ summary::-webkit-details-marker {
 .content_box{
     .content_item{
         display: grid;
-        gap: 32px;
+        gap: 15px;
         grid-template-columns: repeat(3,362px);
         justify-content: center;
         justify-items: center;
@@ -711,6 +712,7 @@ summary::-webkit-details-marker {
             margin-top: 60px;
             border: 0px solid gray;
             background-color: #F5F3F3;
+            padding: 15px;
             &_head{
                 display: flex;
                 flex-direction: column;
@@ -936,9 +938,16 @@ summary::-webkit-details-marker {
     .content_box{
         display: grid;
         gap: 15px;
-        grid-template-columns: repeat(2,342px);
-        margin-bottom: 60px;
-    
+        justify-content: center;
+        justify-items: center;
+        
+    }
+    .content_box .content_item {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(2, 362px);
+        justify-content: center;
+        justify-items: center;
     }
     .basket_box {
         display: flex;
@@ -953,6 +962,18 @@ summary::-webkit-details-marker {
             gap:100px;
         }
     }
+    .basket_box_right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .basket_box_right_input {
+        display: flex;
+        flex-direction: column;
+        padding-top: 110px;
+        padding-bottom: 50px;
+    }
 
     .icon:hover path{
         fill:$mainColorSite
@@ -960,6 +981,7 @@ summary::-webkit-details-marker {
     .registration{
         flex-direction: column;
         gap: 0px;
+        padding: 50px;
     }
 }
 
@@ -971,7 +993,6 @@ summary::-webkit-details-marker {
     img {
         max-width: 100%;
     }
-    
     .main_top_info{
         padding-top: 150px;
         padding-bottom: 150px;
@@ -1013,6 +1034,8 @@ summary::-webkit-details-marker {
     .registration{
         flex-direction: column;
         gap: 0px;
+        padding: 25px;
+    }
    
     }
     .registration_join__button{
@@ -1032,4 +1055,9 @@ summary::-webkit-details-marker {
         flex-direction: column;
         align-items: center;
     }
-}
+    .basket_box_right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
